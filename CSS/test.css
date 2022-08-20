@@ -1,0 +1,2049 @@
+@charset "UTF-8";
+
+/*共通---------------------------------------*/
+html {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.view-more-btn1 {
+    color: black;
+    border: 2px solid #d3d3d3;
+    width: 250px;
+    height: 40px;
+}
+
+.view-more-btn2 {
+    color: black;
+    border: 2px solid #d3d3d3;
+    width: 250px;
+    height: 40px;
+}
+
+.view-more-btn3 {
+    color: black;
+    border: 2px solid #d3d3d3;
+    width: 250px;
+    height: 40px;
+}
+
+.view-more-btn-mob {
+    display: none;
+}
+
+.filter-on {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slider-non{
+    display: none;
+}
+
+.mob-slider-non{
+    display: none;
+}
+
+
+
+/*ヘッダー------------------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    box-shadow: 1px 0 1px gray;
+    z-index: 8500;
+}
+
+.hed-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.hed-item1 {
+    margin-left: 30px;
+}
+
+.hed-title{
+    font-family: "Josefin Sans";
+}
+
+.hed-item2 {
+    margin-right: 50px;
+}
+
+.hed-nav {
+    font-family: "Josefin Sans";
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3em;
+    list-style: none;
+    padding-top: 1%;
+}
+
+.hed-nav li {
+    margin-left: 50px;
+}
+
+.category {
+    position:relative;
+    cursor: pointer;
+}
+
+.category::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #d3d3d3;
+    bottom: -1px;
+    transform: scale(0,1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+}
+
+.category:hover::after{
+    transform: scale(1,1);
+}
+
+.new-item{
+    position: relative;
+    cursor: pointer;
+}
+
+.new-item::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #d3d3d3;
+    bottom: -1px;
+    transform: scale(0,1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+}
+
+.new-item:hover::after{
+    transform: scale(1,1);
+}
+
+.coordinate{
+    position: relative;
+    cursor: pointer;
+}
+
+.coordinate::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #d3d3d3;
+    bottom: -1px;
+    transform: scale(0,1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+}
+
+.coordinate:hover::after{
+    transform: scale(1,1);
+}
+
+.ranking{
+    position:relative;
+    cursor: pointer;
+}
+
+.ranking::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #d3d3d3;
+    bottom: -1px;
+    transform: scale(0,1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+}
+
+.ranking:hover::after{
+    transform: scale(1,1);
+}
+
+.sale{
+    position: relative;
+    cursor: pointer;
+}
+
+.sale::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #d3d3d3;
+    bottom: -1px;
+    transform: scale(0,1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+}
+
+.sale:hover::after{
+    transform: scale(1,1);
+}
+
+
+.hed-container-mob{
+    display: none;
+}
+
+
+/*カルーセルスライダー------------*/
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider img{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+
+.prev-arrow{
+    position: absolute;
+    top: 200px;
+    left: 5%;
+    z-index: 9000;
+}
+
+.next-arrow{
+    position: absolute;
+    top: 200px;
+    right: 5%;
+}
+
+.slick-dots li.slick-active button::before{
+    content: url(../images/custom-dot.png);
+}
+
+.mob-slider{
+    display: none;
+}
+
+.pc{
+    display: flex;
+}
+
+.sp{
+    display: none;
+}
+
+/*メイン--------------------*/
+main {
+    margin-top: 60px;
+    min-height: 1000px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.row-item1 {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.row-item2 {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.row-item3 {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+
+.row-item4 {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.mob-info-row{
+    display:none;
+}
+
+.coordinate-content {
+    margin-top: 100px;
+}
+
+.content-title1 {
+    font-family: "Josefin Sans";
+    text-align: center;
+    color: gray;
+}
+
+.c1 {
+    opacity: 0;
+}
+
+.c2 {
+    opacity: 0;
+}
+
+.c3 {
+    opacity: 0;
+}
+
+.c4 {
+    opacity: 0;
+}
+
+.c5 {
+    opacity: 0;
+}
+
+.c6 {
+    opacity: 0;
+}
+
+.c7 {
+    opacity: 0;
+}
+
+.c8 {
+    opacity: 0;
+}
+
+.c9 {
+    opacity: 0;
+}
+
+.c10 {
+    opacity: 0;
+}
+
+.c-view {
+    opacity: 1;
+}
+
+.mob-coordinate-container{
+    display: none;
+}
+
+.coordinate-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.c-flex1 {
+    width: 40%;
+    margin-left: 60px;
+}
+
+.c-flex2 {
+    width: 40%;
+    margin-right: 60px;
+}
+
+
+
+.coordinate-item1 {
+    position: relative;
+    background-image: url(../images/coordinate-1.png);
+    background-size: cover;
+    width: 525px;
+    height: 630px;
+}
+
+.white-box1 {
+    position: absolute;
+    top: 380px;
+    left: 500px;
+    width: 230px;
+    height: 120px;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.coordinate-item2 {
+    position: relative;
+    background-image: url(../images/coordinate-2.png);
+    background-size: cover;
+    width: 269px;
+    height: 323px;
+}
+
+.item-position1 {
+    position: absolute;
+    top: 995px;
+    z-index: 7500;
+}
+
+.white-box2 {
+    position: absolute;
+    top: 70px;
+    right: -200px;
+    width: 230px;
+    height: 120px;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.coordinate-item3 {
+    position: relative;
+    background-image: url(../images/coordinate-3.jpg);
+    background-size: cover;
+    width: 269px;
+    height: 323px;
+}
+
+
+.item-position2 {
+    position: absolute;
+    top: 1310px;
+    right: 50px;
+    z-index: 7400;
+}
+
+
+.white-box3 {
+    position: absolute;
+    top: 160px;
+    left: -200px;
+    width: 230px;
+    height: 120px;
+    background-color: white;
+    padding-left: 90px;
+    padding-top: 30px;
+}
+
+.ens-title{
+    font-family: "Josefin Sans";
+}
+
+.period {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.ens-title2{
+    font-family: "Josefin Sans";
+}
+
+.period2 {
+    font-size: 0.8em;
+    color: gray;
+    padding-left: 45px;
+}
+
+.mob-cor-mini{
+    display: none;
+}
+
+.mob-cor-mid{
+    display: none;
+}
+
+.mob-cor-big{
+    display: none;
+}
+
+.mob-cor-tab{
+    display: none;
+}
+
+.cor-long{
+    display: none;
+}
+
+
+.new-content {
+    margin-top: 70px;
+}
+
+.content-title2 {
+    font-family: "Josefin Sans";
+    text-align: center;
+    color: gray;
+}
+
+.n1 {
+    opacity: 0;
+}
+
+.n2 {
+    opacity: 0;
+}
+
+.n3 {
+    opacity: 0;
+}
+
+.n-view {
+    opacity: 1;
+}
+
+
+.clothing-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.clothing-item1{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.clothing-item1:hover{
+    opacity: 0.7;
+}
+
+.clothing-item2{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.clothing-item2:hover{
+    opacity: 0.7;
+}
+
+.clothing-item3{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.clothing-item3:hover{
+    opacity: 0.7;
+}
+
+.clothing-item4{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.clothing-item4:hover{
+    opacity: 0.7;
+}
+
+.clothing-item5{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.clothing-item5:hover{
+    opacity: 0.7;
+}
+
+.clothing-item6{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.clothing-item6:hover{
+    opacity: 0.7;
+}
+
+.goods-detail {
+    font-size: 0.7em;
+}
+
+.prise {
+    margin-top: 5px;
+    font-size: 0.8em;
+    font-weight: bolder;
+}
+
+.clothing-row-long{
+    display: none;
+}
+
+.concept-content {
+    margin-top: 70px;
+}
+
+.content-title3 {
+    font-family: "Josefin Sans";
+    text-align: center;
+    color: gray;
+}
+
+.con1 {
+    opacity: 0;
+}
+
+.con2 {
+    opacity: 0;
+}
+
+.con3 {
+    opacity: 0;
+}
+
+.con4 {
+    opacity: 0;
+}
+
+.con5 {
+    opacity: 0;
+}
+
+.con6 {
+    opacity: 0;
+}
+
+.con7 {
+    opacity: 0;
+}
+
+.con-view {
+    opacity: 1;
+}
+
+.concept-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.concept-text {
+    margin-top: 60px;
+    line-height: 35px;
+    font-size: 0.9em;
+}
+
+.concept-content-long{
+    display: none;
+}
+
+.recently-content{
+    border-top: 1px solid #d3d3d3;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.content-title4 {
+    font-family: "Josefin Sans";
+    text-align: center;
+    color: gray;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.r1 {
+    opacity: 0;
+}
+
+.r2 {
+    opacity: 0;
+}
+
+.r3 {
+    opacity: 0;
+}
+
+.r4 {
+    opacity: 0;
+}
+
+.r5 {
+    opacity: 0;
+}
+
+.r6 {
+    opacity: 0;
+}
+
+.r7 {
+    opacity: 0;
+}
+
+.r8 {
+    opacity: 0;
+}
+
+.r9 {
+    opacity: 0;
+    margin-left: 5px;
+}
+
+.r10 {
+    opacity: 0;
+}
+
+.r11 {
+    opacity: 0;
+}
+
+.r12 {
+    opacity: 0;
+}
+
+.r13 {
+    opacity: 0;
+}
+
+.r14 {
+    opacity: 0;
+}
+
+.r-view {
+    opacity: 1;
+}
+
+.r-slider{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    margin-bottom: 50px;
+}
+
+.r-slider li{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.r-prev-btn{
+    cursor: pointer;
+}
+
+.r-next-btn{
+    cursor: pointer;
+}
+
+.r-item1{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.r-item1:hover{
+    opacity: 0.8;
+}
+
+.r-item2{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.r-item2:hover{
+    opacity: 0.8;
+}
+
+.r-item3{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.r-item3:hover{
+    opacity: 0.8;
+}
+
+.r-item4{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.r-item4:hover{
+    opacity: 0.8;
+}
+
+.r-item5{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.r-item5:hover{
+    opacity: 0.8;
+}
+
+.r-item6{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.r-item6:hover{
+    opacity: 0.8;
+}
+
+.r-slider-long{
+    display: none;
+}
+
+.mob-r-slider{
+    display: none;
+}
+
+.sns-content{
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.sns-content img{
+    width: 25px;
+    height: 25px;
+}
+
+.sns-item1{
+    margin-left: 5px;
+    margin-right: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.sns-item1:hover{
+    opacity: 0.8;
+}
+
+.sns-item2{
+    margin-left: 5px;
+    margin-right: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.sns-item2:hover{
+    opacity: 0.8;
+}
+
+.sns-item3{
+    margin-left: 5px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.sns-item3:hover{
+    opacity: 0.8;
+}
+
+.sns-item4{
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.sns-item4:hover{
+    opacity: 0.8;
+}
+
+.sns-item5{
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.sns-item5:hover{
+    opacity: 0.8;
+}
+
+.sns-view{
+    opacity: 1;
+}
+
+
+/*ページトップへ戻るボタン----------------*/
+.page-top{
+	position: fixed;
+	right: 35px;
+	bottom: 90px;
+	opacity: 0;
+	transition: opacity 0.5s;
+    z-index:8500;
+}
+
+.pagetop-view{
+	opacity:1;
+}
+
+
+/*フッター-------------------------------*/
+footer {
+    background-color: #333333;
+    color: white;
+}
+
+.foot-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-item2{
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.fot-title{
+    font-family: "Josefin Sans";
+    font-size: 1.8em;
+}
+
+.foot-nav{
+    display:flex;
+    justify-content:space-around;
+    margin-top:10px;
+    margin-left:30px;
+}
+
+.foot-nav li{
+    font-size: 0.8em;
+    margin-left: 17px;
+    margin-right: 13px;
+    list-style: none;
+}
+
+.fn-item1{
+    cursor: pointer;
+}
+
+.fn-item2{
+    cursor: pointer;
+}
+
+.fn-item3{
+    cursor: pointer;
+}
+
+.fn-item4{
+    cursor: pointer;
+}
+
+.fn-item5{
+    cursor: pointer;
+}
+
+.fn-item6{
+    cursor: pointer;
+}
+
+.fn-item7{
+    cursor: pointer;
+}
+
+.fn-item8{
+    cursor: pointer;
+}
+
+.last-text{
+    text-align: center;
+    font-family: "Josefin Sans";
+}
+
+.ens-mini{
+    font-size: 0.5em;
+    margin-left:5px;
+}
+
+.right{
+    font-size: 0.7em;
+    margin-left:5px;
+}
+
+.mob-foot-block{
+    display: none;
+}
+
+
+/*ドロワーナビ----------------------------*/
+#nav {
+    position: fixed;
+    top: 0;
+    right: -220px;
+    background-color: white;
+    width: 220px;
+    height: 100vh;
+    transition: transform 0.3s;
+    z-index: 9100;
+}
+
+#nav li {
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.nav-move {
+    transform: translate3d(-220px, 0, 0);
+}
+
+.close-btn {
+    margin-left: 190px;
+    font-size: 1.6em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+/*モバイル用-----------------------------*/
+@media(min-width:320px) and (max-width:751px) {
+
+    .filter-on {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        filter: brightness(50%);
+    }
+
+    .btn-position{
+        margin-top: 5px;
+    }
+
+    header {
+        height: 50px;
+        z-index: 8000;
+    }
+
+    .hed-container {
+        display: none;
+    }
+
+    .hed-container-mob {
+        display: block;
+    }
+
+    .logo-position {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .hed-title-mob{
+        font-family: "Josefin Sans";
+        font-weight: lighter;
+        font-size: 2.4em;
+    }
+
+    .hamburger {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .ham-position {
+        position: fixed;
+        top: 7px;
+        right: 5px;
+    }
+
+    .link1 {
+        cursor: pointer;
+    }
+
+    .link2 {
+        cursor: pointer;
+    }
+
+    .link3 {
+        cursor: pointer;
+    }
+
+    .link4 {
+        cursor: pointer;
+    }
+
+    .link5 {
+        cursor: pointer;
+    }
+
+    .h-line {
+        position: absolute;
+        left: 10px;
+        width: 25px;
+        height: 2px;
+        background-color: black;
+    }
+
+    .line1 {
+        top: 10px;
+    }
+
+    .line2 {
+        top: 18px;
+    }
+
+    .line3 {
+        top: 26px;
+    }
+
+    main{
+        margin-top: 50px;
+    }
+
+    .slider{
+        width: 100vw;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .sp{
+        display: flex;
+    }
+
+    .sp img{
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .prev-arrow{
+        position: absolute;
+        left: -2000px;
+    }
+
+    .next-arrow{
+        position: absolute;
+        right: -2000px;
+    }
+
+    .slick-arrow{
+        display: none;
+    }
+
+    .info-row {
+        display: none;
+    }
+
+    .mob-info-row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .mob-info-row img{
+        width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .new-content{
+        display: none;
+    }
+
+    .concept-content{
+        display: none;
+    }
+
+    .coordinate-content{
+        margin-top: 20px;
+    }
+
+    .content-title1{
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+
+    .coordinate-container{
+        display: none;
+    }
+
+
+    .view-more-btn2{
+        display: none;
+    }
+
+    .view-more-btn-mob{
+        display: block;
+        color: black;
+        border: 2px solid #d3d3d3;
+        width: 250px;
+        height: 40px;
+        margin-top: 30px;
+    }
+
+    .recently-content{
+        border: none;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .content-title4{
+        font-size: 1.3em;
+    }
+
+    .r-slider{
+        display: none;
+    }
+
+    .r-slider-long{
+        display: none;
+    }
+
+    .mob-r-slider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin-bottom: 20%;
+    }
+
+    .mob-r-slider img{
+        width: 100%;
+    }
+
+    .mob-r-slider li{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .sns-content{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .sns-item1{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .sns-item2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .sns-item3{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .sns-item4{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .sns-item5{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .foot-container{
+        display: none;
+    }
+
+    .mob-foot-block{
+        display: block;
+    }
+
+    .mob-foot-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8em;
+    }
+
+    .foot-block1{
+        display: block;
+        list-style: none;
+    }
+
+    .foot-block1 li{
+        margin-top: 30px;
+    }
+
+    .foot-block2{
+        display: block;
+        margin-left:90px;
+        list-style: none;
+    }
+
+    .foot-block2 li{
+        margin-top: 30px;
+    }
+
+    .mob-ens-logo{
+        text-align:center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-family: "Josefin Sans";
+        font-size: 1.7em;
+        color: white;
+    }
+
+    .last-text{
+        margin-bottom: 20px;
+    }
+
+    .page-top{
+        position: fixed;
+        right: 20px;
+        bottom: 420px;
+    }
+
+
+}
+
+/*モバイル用ここまで------------*/
+
+/*PC版のレイアウト調整（10インチ用)------------------*/
+@media(min-width:751px) and (max-width: 1130px){
+    .hed-nav{
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+
+    .info-row img{
+        width: 100%;
+    }
+
+    .c-flex1 {
+        width: 40%;
+        margin-left: 10%;
+    }
+    
+    .c-flex2 {
+        width: 40%;
+        margin-right: 10%;
+    }
+
+    .prev-arrow{
+        position: absolute;
+        left: -3000px;
+    }
+
+    .next-arrow{
+        position: absolute;
+        right: -3000px;
+    }
+
+    .coordinate-container{
+        display: none;
+    }
+
+    .content-title1{
+        margin-bottom: 50px;
+    }
+
+    .cor-long{
+        display: block;
+    }
+
+    .mob-cor-flex1-long{
+        display: flex;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-right: 20%;
+        position: relative;
+    }
+
+    .mob-cor-flex1-long img{
+        margin-right: 30%;
+    }
+
+    .mob-white-box1-long{
+        position: absolute;
+        top: 120px;
+        left: 54%;
+        background-color: white;
+        width: 200px;
+        height: 130px;
+        padding-top: 40px;
+    }
+
+    .mob-cor-flex2-long{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-left: 40%;
+        position: relative;
+    }
+    
+
+    .mob-white-box2-long{
+        position: absolute;
+        top: 120px;
+        left: -50px;
+        background-color: white;
+        width: 200px;
+        height: 130px;
+        padding-top: 40px;
+    }
+
+    .mob-cor-flex3-long{
+        display: flex;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-right: 20%;
+        position: relative;
+    }
+
+    .mob-cor-flex3-long img{
+        margin-right: 30%;
+    }
+
+    .mob-white-box3-long{
+        position: absolute;
+        top: 120px;
+        left: 54%;
+        background-color: white;
+        width: 200px;
+        height: 130px;
+        padding-top: 40px;
+    }
+
+    .last-text{
+        padding-top: 20px;
+    }
+
+    .period{
+        font-size: 0.6em;
+        padding-left: 15%;
+    }
+
+    .ens-title{
+        font-size: 1.3em;
+        padding-left: 15%;
+    }
+
+    .period2{
+        font-size: 0.6em;
+        padding-left: 35%;
+    }
+
+    .ens-title2{
+        font-size: 1.3em;;
+        padding-left: 20%;
+    }
+
+    .clothing-row{
+        display: none;
+    }
+
+    .clothing-row-long{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clothing-item1{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .clothing-item2{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .clothing-item3{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .clothing-item4{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .clothing-item5{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .clothing-item6{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .content-title3{
+        margin-top: 30px;
+    }
+
+    .concept-content{
+        display: none;
+    }
+
+    .concept-content-long{
+        display: block;
+    }
+
+    .concept-img-position{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .concept-text-long{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 25px;
+    }
+
+    .r-slider{
+        display: none;
+    }
+
+    .r-slider-long{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .r-slider-long li{
+        list-style: none;
+    }
+
+    .r-prev-btn{
+        margin-top: 40px;
+    }
+    
+    .r-next-btn{
+        margin-top: 40px;
+    }
+
+    .page-top{
+        position: fixed;
+        right: 30px;
+        bottom: 120px;
+    }
+
+    
+    
+}
+
+/*フッターの文字大きさを一部調整（モバイル版）----------------------------*/
+@media(min-width: 320px) and (max-width: 341px){
+    .mob-foot-container{
+        font-size: 0.7em;
+    }
+}
+
+
+/*コーディネートの表示調整（小型用）----------------------*/
+@media(min-width: 320px) and (max-width: 361px){
+    .mob-cor-mid{
+        display: none;
+    }
+
+    .mob-cor-big{
+        display: none;
+    }
+
+    .mob-cor-tab{
+        display: none;
+    }
+
+    .cor-long{
+        display: none;
+    }
+
+    .mob-cor-mini{
+        display: block;
+    }
+
+    .mob-cor-flex1-mini{
+        display: flex;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-right: 10%;
+        position: relative;
+    }
+
+    .mob-cor-flex1-mini img{
+        margin-right: 30%;
+    }
+
+    .mob-white-box1-mini{
+        position: absolute;
+        top: 60px;
+        left: 47%;
+        background-color: white;
+        width: 150px;
+        height: 60px;
+    }
+
+    .mob-cor-flex2-mini{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-left: 50%;
+        position: relative;
+    }
+
+    .mob-cor-flex2 img{
+        margin-right: 10%;
+    }
+
+    .mob-white-box2-mini{
+        position: absolute;
+        top: 60px;
+        right: 140px;
+        background-color: white;
+        width: 150px;
+        height: 60px;
+    }
+
+    .mob-cor-flex3-mini{
+        display: flex;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-right: 10%;
+        position: relative;
+    }
+
+    .mob-cor-flex3-mini img{
+        margin-right: 30%;
+    }
+
+    .mob-white-box3-mini{
+        position: absolute;
+        top: 60px;
+        left: 47%;
+        background-color: white;
+        width: 150px;
+        height: 60px;
+    }
+
+    .period{
+        font-size: 0.5em;
+        padding-left: 10%;
+    }
+
+    .ens-title{
+        padding-left: 10%;
+    }
+
+    .period2{
+        font-size: 0.5em;
+        padding-left: 24%;
+    }
+
+    .ens-title2{
+        padding-left: 22%;
+    }
+
+}
+
+
+/*コーディネートの表示調整（中型用）-----------------*/
+@media(min-width: 361px) and (max-width: 476px){
+    .mob-cor-mini{
+        display: none;
+    }
+
+    .mob-cor-big{
+        display: none;
+    }
+
+    .mob-cor-tab{
+        display: none;
+    }
+
+    .cor-long{
+        display: none;
+    }
+
+    .mob-cor-mid{
+        display: block;
+    }
+
+    .mob-cor-flex1-mid{
+        display: flex;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-right: 10%;
+        position: relative;
+    }
+
+    .mob-cor-flex1-mid img{
+        margin-right: 30%;
+    }
+
+    .mob-white-box1-mid{
+        position: absolute;
+        top: 60px;
+        left: 47%;
+        background-color: white;
+        width: 150px;
+        height: 60px;
+    }
+
+    .mob-cor-flex2-mid{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-left: 40%;
+        position: relative;
+    }
+    
+
+    .mob-white-box2-mid{
+        position: absolute;
+        top: 60px;
+        left: -50px;
+        background-color: white;
+        width: 150px;
+        height: 60px;
+    }
+
+    .mob-cor-flex3-mid{
+        display: flex;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-right: 10%;
+        position: relative;
+    }
+
+    .mob-cor-flex3-mid img{
+        margin-right: 30%;
+    }
+
+    .mob-white-box3-mid{
+        position: absolute;
+        top: 60px;
+        left: 47%;
+        background-color: white;
+        width: 150px;
+        height: 60px;
+    }
+
+    .last-text{
+        padding-top: 20px;
+    }
+
+    .period{
+        font-size: 0.6em;
+        padding-left: 10%;
+    }
+
+    .ens-title{
+        padding-left: 10%;
+    }
+
+    .period2{
+        font-size: 0.6em;
+        padding-left: 24%;
+    }
+
+    .ens-title2{
+        padding-left: 22%;
+    }
+}
+
+/*コーディネートの表示調整（大型用）-------------------------*/
+@media(min-width: 476px) and (max-width: 650px){
+    .mob-cor-mini{
+        display: none;
+    }
+
+    .mob-cor-mid{
+        display: none;
+    }
+
+    .mob-cor-tab{
+        display: none;
+    }
+
+    .cor-long{
+        display: none;
+    }
+
+    .mob-cor-big{
+        display: block;
+    }
+
+    .mob-cor-flex1-big{
+        display: flex;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-right: 10%;
+        position: relative;
+    }
+
+    .mob-cor-flex1-big img{
+        margin-right: 30%;
+    }
+
+    .mob-white-box1-big{
+        position: absolute;
+        top: 90px;
+        left: 47%;
+        background-color: white;
+        width: 200px;
+        height: 100px;
+        padding-top: 20px;
+    }
+
+    .mob-cor-flex2-big{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-left: 40%;
+        position: relative;
+    }
+    
+
+    .mob-white-box2-big{
+        position: absolute;
+        top: 90px;
+        left: -80px;
+        background-color: white;
+        width: 200px;
+        height: 100px;
+        padding-top: 20px;
+    }
+
+    .mob-cor-flex3-big{
+        display: flex;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-right: 10%;
+        position: relative;
+    }
+
+    .mob-cor-flex3-big img{
+        margin-right: 30%;
+    }
+
+    .mob-white-box3-big{
+        position: absolute;
+        top: 90px;
+        left: 47%;
+        background-color: white;
+        width: 200px;
+        height: 100px;
+        padding-top: 20px;
+    }
+
+    .last-text{
+        padding-top: 20px;
+    }
+
+    .period{
+        font-size: 0.6em;
+        padding-left: 10%;
+    }
+
+    .ens-title{
+        font-size: 1.3em;
+        padding-left: 10%;
+    }
+
+    .period2{
+        font-size: 0.8em;
+        padding-left: 25%;
+    }
+
+    .ens-title2{
+        font-size: 1.3em;;
+        padding-left: 25%;
+    }
+}
+
+/*コーディネートの表示調整（タブレット用）-------------------------*/
+@media(min-width: 650px) and (max-width: 751px){
+    .mob-cor-mini{
+        display: none;
+    }
+
+    .mob-cor-mid{
+        display: none;
+    }
+
+    .mob-cor-big{
+        display: none;
+    }
+
+    .cor-long{
+        display: none;
+    }
+
+    .mob-cor-tab{
+        display: block;
+    }
+
+    .mob-cor-flex1-tab{
+        display: flex;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-right: 20%;
+        position: relative;
+    }
+
+    .mob-cor-flex1-tab img{
+        margin-right: 30%;
+    }
+
+    .mob-white-box1-tab{
+        position: absolute;
+        top: 120px;
+        left: 54%;
+        background-color: white;
+        width: 200px;
+        height: 130px;
+        padding-top: 40px;
+    }
+
+    .mob-cor-flex2-tab{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-left: 40%;
+        position: relative;
+    }
+    
+
+    .mob-white-box2-tab{
+        position: absolute;
+        top: 120px;
+        left: -95px;
+        background-color: white;
+        width: 200px;
+        height: 130px;
+        padding-top: 40px;
+    }
+
+    .mob-cor-flex3-tab{
+        display: flex;
+        justify-content: center;
+        flex-basis: 200px;
+        margin-right: 20%;
+        position: relative;
+    }
+
+    .mob-cor-flex3-tab img{
+        margin-right: 30%;
+    }
+
+    .mob-white-box3-tab{
+        position: absolute;
+        top: 120px;
+        left: 54%;
+        background-color: white;
+        width: 200px;
+        height: 130px;
+        padding-top: 40px;
+    }
+
+    .last-text{
+        padding-top: 20px;
+    }
+
+    .period{
+        font-size: 0.6em;
+        padding-left: 15%;
+    }
+
+    .ens-title{
+        font-size: 1.3em;
+        padding-left: 15%;
+    }
+
+    .period2{
+        font-size: 0.6em;
+        padding-left: 35%;
+    }
+
+    .ens-title2{
+        font-size: 1.3em;;
+        padding-left: 20%;
+    }
+}
+
+
+/*区切り線の表示調整（モバイル版）-------------------------*/
+@media(min-width: 320px) and (max-width: 470px){
+    .mob-separate-img{
+        width: 100vw;
+        height: 80px;
+        background-image: url(../images/separate.png);
+        background-size: contain;
+    }
+}
+
+@media(min-width: 471px) and (max-width: 751px){
+    .mob-separate-img{
+        width: 100vw;
+        height: 130px;
+        background-image: url(../images/separate.png);
+        background-size: contain;
+    }
+}
+
+/*フッター文字の表示調整--------------------------*/
+@media(min-width: 751px) and (max-width:1044px){
+    .foot-nav li{
+        font-size: 0.6em;
+    }
+
+    .foot-nav li{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .last-text{
+        font-size: 0.7em;
+    }
+}
+
+

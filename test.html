@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>課題サイト</title>
+<meta charset="UTF-8">
+<!--レスポンシブ対応-->
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="description" content="課題サイト">
+<!--リセットCSS-->
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+<!--スライダー用CSS-->
+<link rel="stylesheet" href="CSS/slick.css">
+<link rel="stylesheet" href="CSS/slick-theme.css">
+<!--通常CSS-->
+<link rel="stylesheet" href="CSS/test.css">
+<!--jQueryとinviewライブラリ-->
+<script src="JS/jquery-3.6.0.min.js"></script>
+<script src="JS/jquery.inview.min.js"></script>
+<!--ファビコン-->
+<link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+    <!--ページフィルター（透明黒色）-->
+    <div id="page-filter">
+
+    <!--ヘッダー-->
+    <header>
+        <!--pc版-->
+        <div class="hed-container">
+            <div class="hed-item1">
+                <h1 class="hed-title">ens</h1>
+            </div>
+
+            <div class="hed-item2">
+                <ul class="hed-nav">
+                    <li class="category">CATEGORY</li>
+                    <li class="new-item">NEW ITEMS</li>
+                    <li class="coordinate">COORDINATE</li>
+                    <li class="ranking">RANKING</li>
+                    <li class="sale">SALE</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--スマホ版-->
+        <div class="hed-container-mob">
+            <div class="logo-position">
+                <p class="hed-title-mob">ens</p>
+            </div>
+
+            <div class="hamburger ham-position">
+                <span class="h-line line1"></span>
+                <span class="h-line line2"></span>
+                <span class="h-line line3"></span>
+            </div>
+        </div>
+    </header>
+
+    <br>
+
+    <!--メイン-->
+    <main>
+        <!--スライダー（PC）-->
+        <ul class="slider pc">
+            <li><img src="images/ens-collection.png" alt="ensコレクションの画像（PC版）"></li>
+            <li><img src="images/ens-collection.png" alt="ensコレクションの画像（PC版）"></li>
+            <li><img src="images/ens-collection.png" alt="ensコレクションの画像（PC版）"></li>
+        </ul>
+        <ul class="slider sp">
+            <li><img src="images/mob-ens-collection.png" alt="ensコレクションの画像（スマホ版）"></li>
+            <li><img src="images/mob-ens-collection.png" alt="ensコレクションの画像（スマホ版）"></li>
+            <li><img src="images/mob-ens-collection.png" alt="ensコレクションの画像（スマホ版）"></li>
+        </ul>
+
+
+
+        <!--pc版リンク画像４つ-->
+        <div class="info-row">
+            <div class="row-item1">
+                <img src="images/denim-collection.png" alt="デニムコレクションのリンク画像">
+            </div>
+
+            <div class="row-item2">
+                <img src="images/resort-fashion-fair.png" alt="リゾートファッションフェアのリンク画像">
+            </div>
+
+            <div class="row-item3">
+                <img src="images/onepiece.png" alt="ワンピースのリンク画像">
+            </div>
+
+            <div class="row-item4">
+                <img src="images/large-size.png" alt="大きいサイズ衣服のリンク画像">
+            </div>
+
+
+        </div>
+
+        <!--スマホ版リンク画像4つ-->
+        <div class="mob-info-row">
+            <div class="mob-row-item1">
+                <img src="images/denim-collection.png" alt="デニムコレクションのリンク画像">
+            </div>
+
+            <div class="mob-row-item2">
+                <img src="images/resort-fashion-fair.png" alt="リゾートファッションフェアのリンク画像">
+            </div>
+        </div>
+
+        <div class="mob-info-row">
+            <div class="mob-row-item3">
+                <img src="images/onepiece.png" alt="ワンピースのリンク画像">
+            </div>
+
+            <div class="mob-row-item4">
+                <img src="images/large-size.png" alt="大きいサイズ衣服のリンク画像">
+            </div>
+        </div>
+
+        <br>
+        
+        <div class="btn-position">
+            <input type="button" value="VIEW MORE" class="view-more-btn1">
+        </div>
+        
+        <br>
+
+        <div class="coordinate-content">
+            <h2 class="content-title1"><span class="c1">C</span><span class="c2">O</span><span class="c3">O</span><span class="c4">R</span><span class="c5">D</span><span class="c6">I</span><span class="c7">N</span><span class="c8">A</span><span class="c9">T</span><span class="c10">E</span></h2>
+            <!--PC版-->
+            <div class="coordinate-container">
+                <div class="c-flex1">
+                    <div class="coordinate-item1">
+                        <div class="white-box1">
+                            <p class="detail">
+                                <span class="period">2017.03.10</span><br>
+                                <span class="ens-title">ens Coordinate</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div><!--.c-flex1-->
+
+                <div class="c-flex2">
+                    <div class="item-position1 coordinate-item2">
+                        <div class="white-box2">
+                            <p class="detail">
+                                <span class="period">2017.03.10</span><br>
+                                <span class="ens-title">ens Coordinate</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-position2 coordinate-item3">
+                        <div class="white-box3">
+                            <p class="detail">
+                                <span class="period2">2017.03.10</span><br>
+                                <span class="ens-title">ens Coordinate</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div><!--.c-flex2-->
+            </div>
+            <!--PC版ここまで-->
+
+            <!--スマホ版（小型用）-->
+            <div class="mob-cor-mini">
+
+            <div class="mob-cor-flex1-mini">
+                <img src="images/mob-cor-img1-mini.png" alt="コーディネート画像１" class="mob-cor-img1-mini">
+
+                <div class="mob-white-box1-mini">
+                    <p class="detail">
+                        <span class="period">2017.03.10 UPDATE</span><br>
+                        <span class="ens-title">ens Coordinate</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mob-cor-flex2-mini">
+                <img src="images/mob-cor-img2-mini.png" alt="コーディネート画像2" class="mob-cor-img2-mini">
+
+                <div class="mob-white-box2-mini">
+                    <p class="detail">
+                        <span class="period2">2017.03.10 UPDATE</span><br>
+                        <span class="ens-title2">ens Coordinate</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="mob-cor-flex3-mini">
+                <img src="images/mob-cor-img1-mini.png" alt="コーディネート画像3" class="mob-cor-img3-mini">
+
+                <div class="mob-white-box3-mini">
+                    <p class="detail">
+                        <span class="period">2017.03.10 UPDATE</span><br>
+                        <span class="ens-title">ens Coordinate</span>
+                    </p>
+                </div>
+            </div>
+
+            </div>
+            <!--スマホ版（小型）ここまで-->
+
+            <!--スマホ版（中型）-->
+            <div class="mob-cor-mid">
+
+                <div class="mob-cor-flex1-mid">
+                    <img src="images/mob-cor-img1-mid.png" alt="コーディネート画像１" class="mob-cor-img1-mid">
+    
+                    <div class="mob-white-box1-mid">
+                        <p class="detail">
+                            <span class="period">2017.03.10 UPDATE</span><br>
+                            <span class="ens-title">ens Coordinate</span>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="mob-cor-flex2-mid">
+                    <img src="images/mob-cor-img2-mid.png" alt="コーディネート画像2" class="mob-cor-img2-mid">
+    
+                    <div class="mob-white-box2-mid">
+                        <p class="detail">
+                            <span class="period2">2017.03.10 UPDATE</span><br>
+                            <span class="ens-title2">ens Coordinate</span>
+                        </p>
+                    </div>
+    
+                </div>
+    
+                <div class="mob-cor-flex3-mid">
+                    <img src="images/mob-cor-img3-mid.png" alt="コーディネート画像3" class="mob-cor-img3-mid">
+    
+                    <div class="mob-white-box3-mid">
+                        <p class="detail">
+                            <span class="period">2017.03.10 UPDATE</span><br>
+                            <span class="ens-title">ens Coordinate</span>
+                        </p>
+                    </div>
+                </div>
+    
+                </div>
+                <!--スマホ版（中型）ここまで-->
+
+                <!--スマホ版（大型）-->
+                <div class="mob-cor-big">
+
+                    <div class="mob-cor-flex1-big">
+                        <img src="images/mob-cor-img1-big.png" alt="コーディネート画像１" class="mob-cor-img1-big">
+        
+                        <div class="mob-white-box1-big">
+                            <p class="detail">
+                                <span class="period">2017.03.10 UPDATE</span><br>
+                                <span class="ens-title">ens Coordinate</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="mob-cor-flex2-big">
+                        <img src="images/mob-cor-img2-big.png" alt="コーディネート画像2" class="mob-cor-img2-big">
+        
+                        <div class="mob-white-box2-big">
+                            <p class="detail">
+                                <span class="period2">2017.03.10 UPDATE</span><br>
+                                <span class="ens-title2">ens Coordinate</span>
+                            </p>
+                        </div>
+        
+                    </div>
+        
+                    <div class="mob-cor-flex3-big">
+                        <img src="images/mob-cor-img3-big.png" alt="コーディネート画像１" class="mob-cor-img3-big">
+
+                        <div class="mob-white-box3-big">
+                            <p class="detail">
+                                <span class="period">2017.03.10 UPDATE</span><br>
+                                <span class="ens-title">ens Coordinate</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--スマホ版（大型）ここまで-->
+
+                <!--タブレット版-->
+                <div class="mob-cor-tab">
+
+                    <div class="mob-cor-flex1-tab">
+                        <img src="images/mob-cor-img1-tab.png" alt="コーディネート画像１" class="mob-cor-img1-tab">
+        
+                        <div class="mob-white-box1-tab">
+                            <p class="detail">
+                                <span class="period">2017.03.10 UPDATE</span><br>
+                                <span class="ens-title">ens Coordinate</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="mob-cor-flex2-tab">
+                        <img src="images/mob-cor-img2-tab.png" alt="コーディネート画像2" class="mob-cor-img2-tab">
+        
+                        <div class="mob-white-box2-tab">
+                            <p class="detail">
+                                <span class="period2">2017.03.10 UPDATE</span><br>
+                                <span class="ens-title2">ens Coordinate</span>
+                            </p>
+                        </div>
+        
+                    </div>
+        
+                    <div class="mob-cor-flex3-tab">
+                        <img src="images/mob-cor-img3-tab.png" alt="コーディネート画像3" class="mob-cor-img3-tab">
+
+                        <div class="mob-white-box3-tab">
+                            <p class="detail">
+                                <span class="period">2017.03.10 UPDATE</span><br>
+                                <span class="ens-title">ens Coordinate</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--タブレット版ここまで-->
+
+                <!--10インチ用（1000pxまで）-->
+                <div class="cor-long">
+                    <div class="mob-cor-flex1-long">
+                        <img src="images/mob-cor-img1-long.png" alt="コーディネート画像１" class="mob-cor-img1-long">
+        
+                        <div class="mob-white-box1-long">
+                            <p class="detail">
+                                <span class="period">2017.03.10 UPDATE</span><br>
+                                <span class="ens-title">ens Coordinate</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="mob-cor-flex2-long">
+                        <img src="images/mob-cor-img2-long.png" alt="コーディネート画像2" class="mob-cor-img2-long">
+        
+                        <div class="mob-white-box2-long">
+                            <p class="detail">
+                                <span class="period2">2017.03.10 UPDATE</span><br>
+                                <span class="ens-title2">ens Coordinate</span>
+                            </p>
+                        </div>
+        
+                    </div>
+        
+                    <div class="mob-cor-flex3-long">
+                        <img src="images/mob-cor-img3-long.png" alt="コーディネート画像3" class="mob-cor-img3-long">
+
+                        <div class="mob-white-box3-long">
+                            <p class="detail">
+                                <span class="period">2017.03.10 UPDATE</span><br>
+                                <span class="ens-title">ens Coordinate</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--10インチ用ここまで-->
+
+           
+
+            <br>
+
+            <div class="btn-position">
+                <!--PC版-->
+                <input type="button" value="VIEW MORE" class="view-more-btn2">
+                <!--スマホ版-->
+                <input type="button" value="VIEW MORE" class="view-more-btn-mob">
+            </div>
+
+
+
+        </div><!--.coordinate-content-->
+
+        <br>
+
+        <div class="new-content">
+            <h2 class="content-title2"><span class="n1">N</span><span class="n2">E</span><span class="n3">W</span></h2>
+        
+
+        <br>
+
+        <div class="clothing-row">
+
+            <!--PC版-->
+            <div class="clothing-item1">
+                <img src="images/new-part1.png" alt="新商品１の画像">
+                <p class="goods-detail">
+                    タイトルはこれから選定<br>
+                    します。タイトルは画像はこ...
+                </p>
+
+                <div class="prise">
+                    <p>￥26,000(＋税)</p>
+                </div>
+            </div>
+
+            <div class="clothing-item2">
+                <img src="images/new-part2.png" alt="新商品２の画像">
+                <p class="goods-detail">
+                    タイトルはこれから選定<br>
+                    します。タイトルは画像はこ...
+                </p>
+
+                <div class="prise">
+                    <p>￥26,000(＋税)</p>
+                </div>
+            </div>
+
+            <div class="clothing-item3">
+                <img src="images/new-part1.png" alt="新商品３の画像">
+                <p class="goods-detail">
+                    タイトルはこれから選定<br>
+                    します。タイトルは画像はこ...
+                </p>
+
+                <div class="prise">
+                    <p>￥26,000(＋税)</p>
+                </div>
+            </div>
+
+            <div class="clothing-item4">
+                <img src="images/new-part2.png" alt="新商品４の画像">
+                <p class="goods-detail">
+                    タイトルはこれから選定<br>
+                    します。タイトルは画像はこ...
+                </p>
+
+                <div class="prise">
+                    <p>￥26,000(＋税)</p>
+                </div>
+            </div>
+
+            <div class="clothing-item5">
+                <img src="images/new-part1.png" alt="新商品５の画像">
+                <p class="goods-detail">
+                    タイトルはこれから選定<br>
+                    します。タイトルは画像はこ...
+                </p>
+
+                <div class="prise">
+                    <p>￥26,000(＋税)</p>
+                </div>
+            </div>
+
+            <div class="clothing-item6">
+                <img src="images/new-part2.png" alt="新商品６の画像">
+                <p class="goods-detail">
+                    タイトルはこれから選定<br>
+                    します。タイトルは画像はこ...
+                </p>
+
+                <div class="prise">
+                    <p>￥26,000(＋税)</p>
+                </div>
+            </div>
+        </div>
+        <!--PC版ここまで-->
+
+        <!--10インチ用-->
+        <div class="clothing-row-long">
+            <div class="clothing-item1">
+                <img src="images/new-part1-long.png" alt="新商品１の画像">
+                <p class="goods-detail">
+                    タイトルはこれから<br>
+                    選定します。タイト<br>
+                    ルは画像はこ...
+                </p>
+
+                <div class="prise">
+                    <p>￥26,000(＋税)</p>
+                </div>
+            </div>
+
+            <div class="clothing-item2">
+                <img src="images/new-part2-long.png" alt="新商品２の画像">
+                <p class="goods-detail">
+                    タイトルはこれから<br>
+                    選定します。タイト<br>
+                    ルは画像はこ...
+                </p>
+
+                <div class="prise">
+                    <p>￥26,000(＋税)</p>
+                </div>
+            </div>
+
+            <div class="clothing-item3">
+                <img src="images/new-part1-long.png" alt="新商品３の画像">
+                <p class="goods-detail">
+                    タイトルはこれから<br>
+                    選定します。タイト<br>
+                    ルは画像はこ...
+                </p>
+
+                <div class="prise">
+                    <p>￥26,000(＋税)</p>
+                </div>
+            </div>
+
+            <div class="clothing-item4">
+                <img src="images/new-part2-long.png" alt="新商品４の画像">
+                <p class="goods-detail">
+                    タイトルはこれから<br>
+                    選定します。タイト<br>
+                    ルは画像はこ...
+                </p>
+
+                <div class="prise">
+                    <p>￥26,000(＋税)</p>
+                </div>
+            </div>
+
+            <div class="clothing-item5">
+                <img src="images/new-part1-long.png" alt="新商品５の画像">
+                <p class="goods-detail">
+                    タイトルはこれから<br>
+                    選定します。タイト<br>
+                    ルは画像はこ...
+                </p>
+
+                <div class="prise">
+                    <p>￥26,000(＋税)</p>
+                </div>
+            </div>
+
+            <div class="clothing-item6">
+                <img src="images/new-part2-long.png" alt="新商品６の画像">
+                <p class="goods-detail">
+                    タイトルはこれから<br>
+                    選定します。タイト<br>
+                    ルは画像はこ...
+                </p>
+
+                <div class="prise">
+                    <p>￥26,000(＋税)</p>
+                </div>
+            </div>
+        </div>
+        <!--10インチ用ここまで-->
+
+        <br>
+
+        <div class="btn-position">
+            <input type="button" value="VIEW MORE" class="view-more-btn3">
+        </div>
+
+        </div><!--.new-content-->
+
+        <br>
+
+        <div class="concept-content">
+
+            <h2 class="content-title3"><span class="con1">C</span><span class="con2">O</span><span class="con3">N</span><span class="con4">C</span><span class="con5">E</span><span class="con6">P</span><span class="con7">T</span></h2>
+
+            <div class="concept-container">
+                <div class="concept-item1">
+                    <img src="images/concept-img.png" alt="コンセプト画像">
+                </div>
+
+                <div class="concept-item2">
+                    <p class="concept-text">
+                        ダミーテキストダミーテキストダミーテキストダミーテキストダミーテ<br>
+                        キストダミーテキストダミーテキストダミーテキストダミーテキストダ<br>
+                        ミーテキストダミーテキストダミーテキストダミーテキストダミーテキ<br>
+                        ストダミーテキストダミーテキストダミーテキストダミーテキストダ<br>
+                        ミーテキストダミーテキストダミーテキストダミーテキスト
+
+                    </p>
+                </div>
+            </div>
+
+            <br>
+        </div><!--.concept-content-->
+
+        <!--10インチ用-->
+        <div class="concept-content-long">
+
+            <h2 class="content-title3"><span class="con1">C</span><span class="con2">O</span><span class="con3">N</span><span class="con4">C</span><span class="con5">E</span><span class="con6">P</span><span class="con7">T</span></h2>
+
+
+            <div class="concept-img-position">
+                <img src="images/concept-img.png" alt="コンセプト画像">
+            </div>
+
+            <div class="concept-text-long">
+                <p>
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテ<br>
+                    キストダミーテキストダミーテキストダミーテキストダミーテキストダ<br>
+                    ミーテキストダミーテキストダミーテキストダミーテキストダミーテキ<br>
+                    ストダミーテキストダミーテキストダミーテキストダミーテキストダ<br>
+                    ミーテキストダミーテキストダミーテキストダミーテキスト
+                </p>
+            </div>
+        </div>
+
+
+        <br>
+
+        <!--区切り線（スマホ版）-->
+        <div class="mob-separate-img">
+            
+        </div>
+
+        <div class="recently-content">
+
+            <h2 class="content-title4"><span class="r1">R</span><span class="r2">E</span><span class="r3">C</span><span class="r4">E</span><span class="r5">N</span><span class="r6">T</span><span class="r7">L</span><span class="r8">Y</span><span class="r9">V</span><span class="r10">I</span><span class="r11">E</span><span class="r12">W</span><span class="r13">E</span><span class="r14">D</span></h2>
+
+    
+        </div><!--.recently-content-->
+
+        <ul class="r-slider">
+            <li class="r-prev-btn"><img src="images/arrow-left.png" alt="戻るボタン"></li>
+            <li class="r-item1"><img src="images/r-part1.png" alt="現在見られたアイテム１"></li>
+            <li class="r-item2"><img src="images/r-part2.png" alt="現在見られたアイテム２"></li>
+            <li class="r-item3"><img src="images/r-part1.png" alt="現在見られたアイテム３"></li>
+            <li class="r-item4"><img src="images/r-part2.png" alt="現在見られたアイテム４"></li>
+            <li class="r-item5"><img src="images/r-part1.png" alt="現在見られたアイテム５"></li>
+            <li class="r-item6"><img src="images/r-part2.png" alt="現在見られたアイテム６"></li>
+            <li class="r-next-btn"><img src="images/arrow-right.png" alt="進むボタン"></li>
+        </ul>
+
+        <ul class="r-slider-long">
+            <li class="r-prev-btn"><img src="images/arrow-left.png" alt="戻るボタン"></li>
+            <li class="r-item1"><img src="images/r-part1-long.png" alt="現在見られたアイテム１"></li>
+            <li class="r-item2"><img src="images/r-part2-long.png" alt="現在見られたアイテム２"></li>
+            <li class="r-item3"><img src="images/r-part1-long.png" alt="現在見られたアイテム３"></li>
+            <li class="r-item4"><img src="images/r-part2-long.png" alt="現在見られたアイテム４"></li>
+            <li class="r-item5"><img src="images/r-part1-long.png" alt="現在見られたアイテム５"></li>
+            <li class="r-item6"><img src="images/r-part2-long.png" alt="現在見られたアイテム６"></li>
+            <li class="r-next-btn"><img src="images/arrow-right.png" alt="進むボタン"></li>
+        </ul>
+
+        <ul class="mob-r-slider">
+            <li class="r-prev-btn"><img src="images/arrow-left.png" alt="戻るボタン"></li>
+            <li class="r-item1"><img src="images/r-part1.png" alt="現在見られたアイテム１"></li>
+            <li class="r-item2"><img src="images/r-part2.png" alt="現在見られたアイテム２"></li>
+            <li class="r-item3"><img src="images/r-part1.png" alt="現在見られたアイテム３"></li>
+            <li class="r-next-btn"><img src="images/arrow-right.png" alt="進むボタン"></li>
+        </ul>
+
+        <br>
+
+        <!--snsアイコン-->
+        <div class="sns-content">
+            <div class="sns-item1">
+                <img src="images/twitter-icon.png" alt="Twitterのアイコン">
+            </div>
+
+            <div class="sns-item2">
+                <img src="images/facebook-icon.png" alt="facebookのアイコン">
+            </div>
+
+            <div class="sns-item3">
+                <img src="images/youtube-icon.png" alt="yotubeのアイコン">
+            </div>
+
+            <div class="sns-item4">
+                <img src="images/instagram-icon.png" alt="instagramのアイコン">
+            </div>
+
+            <div class="sns-item5">
+                <img src="images/line-icon.png" alt="lineのアイコン">
+            </div>
+
+        </div>
+
+        <!--トップへ戻るボタン-->
+		<div class="page-top">
+            <a href="#wrap"><img src="images/top-btn.png" alt="トップへ戻るボタン"></a>
+        </div>
+
+
+    </main>
+
+    <!--フッター-->
+    <footer>
+        <!--PC版-->
+        <div class="foot-container">
+            <div class="foot-item1">
+                <ul class="foot-nav">
+                    <li class="fn-item1">お問い合わせ</li>
+                    <li class="fn-item2">はじめての方へ</li>
+                    <li class="fn-item3">ご利用ガイド</li>
+                    <li class="fn-item4">サイズガイド</li>
+                    <li class="fn-item5">会社概要</li>
+                    <li class="fn-item6">プライバシーポリシー</li>
+                    <li class="fn-item7">利用規約</li>
+                    <li class="fn-item8">特定商取引に基づく表示</li>
+                </ul>
+            </div>
+
+            <div class="foot-item2">
+                <h2 class="fot-title">ens</h2>
+            </div>
+        </div>
+        <!--PC版ここまで-->
+
+        <!--スマホ版-->
+        <div class="mob-foot-block">
+            <div class="mob-foot-container">
+                <ul class="foot-block1">
+                    <li class="fot-item1">お問い合わせ</li>
+                    <li class="fot-item2">ご利用ガイド</li>
+                    <li class="fot-item3">会社概要</li>
+                    <li class="fot-item4">利用規約</li>
+                </ul>
+
+                <ul class="foot-block2">
+                    <li class="fot-item5">はじめての方へ</li>
+                    <li class="fot-item6">サイズガイド</li>
+                    <li class="fot-item7">プライバシーポリシー</li>
+                    <li class="fot-item8">特定商取引法に基づく表示</li>
+                </ul>
+            </div>
+
+            <div class="mob-ens-logo">
+                <p>ens</p>
+            </div>
+        </div>
+        <!--スマホ版ここまで-->
+
+        <p class="last-text">&copy;<span class="ens-mini">ens</span> <span class="right">ALL RIGHTS RESERVED.</span></p>
+
+        <br>
+    </footer>
+
+    </div><!--#page-filter-->
+
+    <!--ドロワーナビ-->
+    <nav id="nav">
+        <p class="close-btn">×</p>
+        <ul>
+            <li class="link1">CATEGORY</li>
+            <li class="link2">NEW ITEMS</li>
+            <li class="link3">COORDINATE</li>
+            <li class="link4">RANKING</li>
+            <li class="link5">SALE</li>
+        </ul>
+    </nav>
+
+    <!--Slickライブラリと通常jsファイル-->
+    <script src="JS/slick.min.js"></script>
+    <script src="JS/test.js"></script>
+</body>
+</html>
